@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- Google Fonts for Cute Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Baloo 2', sans-serif; /* 귀여운 글꼴로 변경 */
+      margin: 0;
+      padding: 0;
+      background-color: #fef9f5;
+      color: #333;
+      line-height: 1.8;
+      font-size: 16px;
+      padding-bottom: 50px;
+      text-align: center; /* 전체 텍스트 중앙 정렬 */
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 1em;
+    }
+    header h1 {
+      font-size: 2.5em; /* 제목 크기 */
+      margin: 0;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 0.5em;
+      font-weight: 400;
+    }
+    section {
+      max-width: 1300px;
+      margin: 4em auto;
+      padding: 2em 2.5em;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 1.5em;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.2em;
+      line-height: 1.6;
+    }
+    .service-box, .info-box {
+      background-color: #fffaf4;
+      padding: 1.5em;
+      margin: 1.5em 0;
+      border-radius: 10px;
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: center;
+      word-wrap: break-word;
+    }
+    .service-item {
+      margin: 1em 0;
+      padding: 0.8em;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.1em;
+      white-space: nowrap;
+    }
+    .contact-box {
+      font-size: 1.1em;
+      line-height: 2;
+      margin-top: 2em;
+    }
+    .review-summary {
+      cursor: pointer;
+      margin: 1em 0;
+      padding: 1em 1.2em;
+      background-color: #fff0f0;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      font-size: 1.1em;
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+    }
+    .review-summary:hover {
+      background-color: #ffeaea;
+    }
+    .review-detail {
+      display: none;
+      padding: 0.8em 1em;
+      font-size: 1.0em;
+      color: #555;
+    }
+    .pagination {
+      margin-top: 2em;
+    }
+    .pagination button {
+      background-color: #ffd9d9;
+      border: none;
+      padding: 0.7em 1.5em;
+      margin: 0 0.3em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .pagination button.active {
+      background-color: #ffbcbc;
+      font-weight: bold;
+    }
+
+    /* 모바일 화면에 맞춘 스타일 */
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      h2 {
+        font-size: 1.4em;
+        margin-bottom: 1.2em;
+      }
+      .service-item, .review-summary {
+        font-size: 1em;
+      }
+      section {
+        margin: 2.5em 1em;
+        padding: 1.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>스윗케어119</h1>
+      <p>나만을 위한 쉼, 스윗케어119에서</p>
+    </div>
+  </header>
+
+<section id="hero-cta" style="margin-top: 3em; margin-bottom: 3em;">
+  <h2 style="color: #d6336c;">💖 오늘 하루, 나만을 위한 힐링이 필요할 때</h2>
+  <p style="margin-top: 0.5em;">스윗케어119와 함께 편안한 손길을 느껴보세요.</p>
+  <a href="#contact" style="background-color: #ff8da0; color: white; padding: 0.8em 1.6em; border-radius: 30px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">지금 예약하기</a>
+</section>
+
+  <section id="intro">
+    <h2>❤️ 스윗케어119란?</h2>
+    <div class="info-box">
+      <p>스윗케어119는 오직 여성을 위한 프라이빗한 공간으로, 일상에 지친 몸과 마음을 편하게 돌보아주는 힐링의 시간을 선사합니다.</p>
+      <p>부산에 위치한 여성전용 전문 힐링샵 스윗케어119는 여성 고객 분들의 니즈를 세심하게 반영한 맞춤형 힐링 스페셜 프로그램을 운영하고 있습니다.</p>
+      <p>스윗케어119의 모든 마사지 서비스는 부산 여성들이 일상 속에서 편히 쉴 수 있는 여성전용 힐링 공간을 지향하며, 안전하고 조용한 분위기에서 진행됩니다.</p>
+      <p>부산여성전용마사지를 찾는 많은 분들이 스윗케어119의 프리미엄 케어와 정성 가득한 손길에 만족하며, 꾸준히 다시 방문하고 있습니다.</p>
+      <p>스윗케어119는 부산에서 드물게 여성들을 위한 마사지샵으로, 프라이버시를 철저히 보장하고 오직 휴식과 회복에 집중할 수 있게 합니다.</p>
+    </div>
+  </section>
+
+ <section id="service">
+    <h2>💆‍♀️ 서비스 안내</h2>
+    <div class="service-box">
+      <div class="service-item">A코스 - 아로마 마사지 (60분 / 100,000원)</div>
+      <div class="service-item">B코스 - 아로마 + 스웨디시 마사지 (90분 / 150,000원)</div>
+      <div class="service-item">C코스 - 아로마 + 스웨디시 + 서혜부 마사지 (120분 / 200,000원)</div>
+    </div>
+  </section>
+
+  <section id="brand" style="margin-top: 3em; margin-bottom: 3em;">
+    <h2>🌸 스윗케어119는?</h2>
+    <div class="info-box">
+      <ul style="margin: 2em 0; text-align: left; display: inline-block;">
+  <li>💆‍♀️ 정식 교육 이수 훈남 관리사만 투입!</li>
+  <li>🌿 24시간 운영 & 예약 가능</li>
+  <li>🔒 완벽한 프라이버시, 여성전용 안심 공간</li>
+  <li>💖 오직 나만을 위한 1:1 맞춤 케어</li>
+  <li>🎀 깔끔하고 아늑한 홈타입 분위기</li>
+</ul>
+      <div style="background-color: #fff0f7; padding: 1.2em; border-radius: 10px;">
+        <p style="margin-bottom: 0.8em;">[스윗케어119]는 부산 여성분들만을 위한 <strong>귀엽고 감성적인 마사지 브랜드</strong>예요 :)</p>
+        <p style="margin-bottom: 0.8em;">조용하고 프라이빗한 공간에서 훈훈한 관리사님에게 힐링받는 느낌... 💗 딱 그거예요!</p>
+        <p style="margin-bottom: 0.8em;">건식, 스웨디시, 아로마… 원하는 스타일로 선택 가능! 귀찮은 설명 없이도 센스 있게 진행돼요🧴</p>
+        <p style="margin-bottom: 0.8em;">지금 힘든 하루를 보내고 있다면? 지금 당장 나를 위한 시간을 만들어보세요✨</p>
+        <p style="margin-bottom: 0;">💕 오늘도 수고한 당신, 스윗하게 안아줄게요 :)</p>
+      </div>
+    </div>
+  </section>
+
+<section id="recommend">
+  <h2>🌙 이런 분들에게 추천드려요</h2>
+  <div class="info-box" style="text-align: center;">
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin: 1em 0;">📌 오늘 하루, 아무 생각 없이 쉬고 싶을 때</li>
+      <li style="margin: 1em 0;">🌷 따뜻한 손길과 편안한 기분이 필요한 날</li>
+      <li style="margin: 1em 0;">🎀 혼자서도 부담 없이 힐링을 즐기고 싶을 때</li>
+      <li style="margin: 1em 0;">💆‍♀️ 누군가의 섬세한 케어가 그리운 순간</li>
+      <li style="margin: 1em 0;">🛋 조용하고 아늑한 공간에서 재충전하고 싶을 때</li>
+    </ul>
+  </div>
+</section>
+
+<section id="qna">
+  <h2>❓ 스윗케어 Q&A</h2>
+  <div class="info-box">
+    <p><strong>1. Q. 정말 여성전용인가요?</strong><br>A. 네, 고객님 안전과 프라이버시를 위해 여성만을 위한 서비스만 제공합니다.</p>
+    <p><strong>2. Q. 마사지사는 어떤 분들이에요?</strong><br>A. 전문 교육을 수료한 20~30대 여성 고객 취향에 맞는 매너 좋은 훈남 관리사들이 배정됩니다.</p>
+    <p><strong>3. Q. 어떤 마사지를 받을 수 있나요?</strong><br>A. 건식, 아로마, 스웨디시, 릴렉스테라피 등 다양한 마사지가 가능합니다.</p>
+    <p><strong>4. Q. 출장 가능한 지역은 어디까지인가요?</strong><br>A. 부산 전 지역은 기본으로 커버하며, 근교는 상담 후 조율됩니다.</p>
+    <p><strong>5. Q. 예약은 어떻게 하나요?</strong><br>A. 카카오톡 또는 전화 한 통으로 빠르고 간편하게 예약이 가능합니다.</p>
+    <p><strong>6. Q. 밤늦게도 오나요?</strong><br>A. 네, 24시간 운영으로 원하시는 시간대에 맞춰 방문드립니다.</p>
+    <p><strong>7. Q. 위생은 괜찮은가요?</strong><br>A. 철저한 위생 관리와 도구 소독으로 안심하실 수 있습니다.</p>
+    <p><strong>8. Q. 마사지 받다가 불편하면 어떻게 하나요?</strong><br>A. 언제든지 즉시 중단 요청 가능하며 고객님의 편안함을 최우선으로 합니다.</p>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>💬 고객 후기</h2>
+   <strong>스윗케어119</strong>는 '토닥이'처럼 따뜻한 감성을 담아, 여성 고객님들의 만족도를 최우선으로 생각합니다.<br>
+    부산 내 출장 및 부전동 오프라인 샵 모두 후회 없는 선택이 되도록 매일 최선을 다하고 있어요. 💕 
+    지금 후기를 통해 토닥이는 감성을 경험해보세요!
+  </p>
+    <div class="info-box" id="reviewContainer"></div>
+    <div class="pagination" id="pagination"></div>
+  </section>
+
+  <section id="contact">
+    <h2>📞 문의 및 예약</h2>
+    <div class="contact-box">
+  <a href="tel:01080682418" style="text-decoration: none; color: inherit;">
+    ☎️ 전화문의: 010-8068-2418
+  </a><br>
+  <a href="https://open.kakao.com/o/shLSYlsh" target="_blank" style="text-decoration: none; color: inherit;">
+    💬 카카오톡 ID: sweetcare119
+  </a><br>
+  <a href="https://line.me/ti/p/~sweetcare119" target="_blank" style="text-decoration: none; color: inherit;">
+    💚 라인ID: sweetcare119 
+  </a>
+</div>
+  </section>
+
+  <script>
+    const reviews = [
+  { name: "김**님", short: "정말 섬세하고 따뜻한 케어였어요!", detail: "처음에는 남자 관리사라 걱정했는데, 부산 토닥이 스타일로 여성전용마사지가 이렇게 만족스러울 수 있구나 싶었어요. 정중하고 조심스러운 케어에 감동받았습니다. 재방문 의사 100%입니다." },
+  { name: "이**님", short: "공간도 힐링 그 자체! 실력도 최고였어요💆‍♀️", detail: "청결하고 아늑한 부산 여성전용마사지 중 가장 정성스러운 공간이었어요. 관리사님도 친절하고 섬세해서 다음엔 친구랑 함께 올 생각이에요." },
+  { name: "박**님", short: "말이 필요 없는 힐링 케어! 정말 감동이에요😊", detail: "부산토닥이 같은 감성으로 마사지를 받을 수 있어서 진짜 만족했어요. 프라이빗한 분위기 덕분에 혼자서도 편하게 힐링할 수 있었어요." },
+  { name: "최**님", short: "걱정은 사라지고 편안함만 가득했어요✨", detail: "이곳은 부산에서도 여성전용이라 믿고 찾을 수 있었어요. 마사지 하나하나가 정성스럽고 따뜻해서 다음에도 꼭 예약할 거예요." },
+  { name: "정**님", short: "또 받고 싶어지는 마법 같은 손길💖", detail: "여성전용마사지라 그런지 케어 하나하나가 정말 세심하고 믿음이 갔어요. 마음이 안정되고 자존감도 회복되는 기분이었어요." },
+  { name: "한**님", short: "세심한 터치에 감탄했습니다", detail: "따뜻하고 정중한 분위기 속에서 섬세한 케어를 받았어요. 다음날 아침 몸이 가볍게 풀려서 정말 좋았어요. 감사합니다💫" },
+  { name: "윤**님", short: "정성어린 케어에 몸과 마음이 편안했어요", detail: "부산에서 여성전용마사지를 찾는다면 이곳을 추천하고 싶어요. 서비스도 응대도 만족스러웠고 안심하고 이용할 수 있었어요." },
+  { name: "강**님", short: "프라이빗한 분위기에서 최고의 만족🥰", detail: "조용하고 프라이빗한 환경에서 편하게 받을 수 있었어요. 예약부터 마무리까지 모든 게 매끄럽고 배려 깊었어요." },
+  { name: "배**님", short: "매 순간 정성이 느껴졌어요", detail: "마사지뿐 아니라 말투, 분위기, 향기까지 섬세하게 신경 쓴 느낌이에요. 토닥이는 듯한 케어에 진심으로 만족했습니다." },
+  { name: "유**님", short: "가격 이상의 서비스에 감동이에요✨", detail: "여성전용샵이라서인지 배려가 느껴졌고, 처음부터 끝까지 정성 가득한 응대 덕분에 기분 좋게 마무리했어요. 다음에도 또 이용할 거예요!" },
+  { name: "서**님", short: "혼자만 알고 싶은 곳이에요☺️", detail: "마사지 기술도 훌륭하지만, 무엇보다 사소한 부분까지 신경 써주는 태도에서 믿음이 갔어요. 자주 이용할 것 같아요." },
+  { name: "진**님", short: "토닥이 같은 마사지, 진심 힐링돼요✨", detail: "여성전용마사지라는 말이 괜히 있는 게 아니에요. 섬세하고 정중한 응대에 진짜 감동받았어요. 부산에서 이런 공간 찾기 쉽지 않은데, 여긴 믿고 또 가고 싶어요." },
+  { name: "류**님", short: "분위기가 아늑하고 안심돼요", detail: "조명이 부드럽고 음악도 차분해서 심신이 편안해지는 공간이었어요. 남자 관리사분도 너무 예의 바르고 섬세해서 불편함 1도 없었습니다." },
+  { name: "김혜**님", short: "부산 여성전용마사지 중 최고였어요💆‍♀️", detail: "지금까지 받은 마사지 중에 이렇게 감성적이고 토닥이는 느낌은 처음이었어요. 특히 여성전용이라서 안심도 되고 만족도가 높았어요. 출장도 가능해서 다음엔 집에서도 받아볼 예정이에요." },
+  { name: "장**님", short: "오늘 하루도 힐링했어요💆‍♀️", detail: "몸도 마음도 지쳤던 하루였는데 이곳에서 풀고 가요. 마사지를 받는 동안 정말 행복했어요." },
+  { name: "오**님", short: "진짜 리얼 후기입니다!!", detail: "한 번만 받고 말 수 없는 곳이에요. 체계적인 관리가 느껴졌고 설명도 친절해서 믿고 받을 수 있었어요." },
+    { name: "노**님", short: "너무 좋아서 후기 씁니다💖", detail: "인터넷 보고 예약했는데 대만족이에요! 감성 가득한 공간에서 제대로 힐링했습니다. 다음엔 친구랑 같이 올 거예요." },
+    { name: "임**님", short: "마사지도 좋고 사람도 좋아요", detail: "시종일관 따뜻하게 응대해주셔서 기분이 좋았어요. 강약 조절도 좋고, 집처럼 편안했어요." },
+    { name: "문**님", short: "추천하고 싶은 곳이에요✨", detail: "청결하고 깔끔한 공간, 그리고 배려 깊은 케어! 다섯 번은 더 올 것 같아요. 너무 감사했어요 :)" },
+    { name: "심**님", short: "정말 만족했어요💕", detail: "예약도 쉽고, 시간도 잘 맞춰주셔서 고마웠어요. 힐링받고 싶을 땐 여기 강추!" },
+    { name: "양**님", short: "모든 게 완벽했어요😍", detail: "처음 방문이었는데, 이제는 단골 예약할 생각이에요. 피곤했던 하루가 리셋된 기분이에요!" },
+    { name: "조**님", short: "센스 있는 응대 최고예요!", detail: "예약부터 종료까지 흐름이 매끄럽고 감각적이에요. 따뜻한 응대 감사합니다💫" },
+    { name: "유진**님", short: "친구한테 추천받았는데 성공!", detail: "말 그대로 힐링! 다음엔 커플관리 받아보고 싶어요. 여자 혼자 가기에도 안전하고 좋아요." },
+    { name: "하**님", short: "매번 감동받고 갑니다😊", detail: "스트레스가 심한 날 꼭 찾는 곳이에요. 고맙습니다. 또 올게요." },
+    { name: "정아**님", short: "감성+실력+친절 삼박자!", detail: "이렇게 섬세한 곳 처음이에요. 손길에서 진심이 느껴졌어요." },
+    { name: "배연**님", short: "완전 추천하는 곳이에요🎀", detail: "실내 향도 좋고 분위기도 좋아서 정말 아늑했어요. 내 몸이 회복된 느낌이에요." },
+    { name: "전**님", short: "언니들! 여기 진짜 좋아요!!", detail: "처음엔 반신반의했는데 다녀오고 나니 왜 유명한지 알겠어요. 다음엔 엄마 모시고 올게요." }
+];
+
+    const reviewsPerPage = 5;
+    let currentPage = 1;
+
+    function displayReviews(page) {
+      const container = document.getElementById("reviewContainer");
+      container.innerHTML = "";
+      const start = (page - 1) * reviewsPerPage;
+      const end = start + reviewsPerPage;
+
+      reviews.slice(start, end).forEach((r) => {
+        const summary = document.createElement("div");
+        summary.className = "review-summary";
+        summary.innerHTML = `<strong style='color:#d6336c;'>${r.name}</strong> &nbsp;|&nbsp; <span style='color:#444;'>${r.short}</span>`;
+        summary.onclick = function () {
+          detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        };
+
+        const detail = document.createElement("div");
+        detail.className = "review-detail";
+        detail.innerText = r.detail;
+
+        container.appendChild(summary);
+        container.appendChild(detail);
+      });
+    }
+
+    function setupPagination() {
+      const totalPages = Math.min(Math.ceil(reviews.length / reviewsPerPage), 5);
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+      const btn = document.createElement("button");
+      btn.innerText = i;
+      btn.className = i === currentPage ? "active" : "";
+      btn.onclick = function () {
+        currentPage = i;
+        displayReviews(currentPage);
+        setupPagination();
+      };
+      pagination.appendChild(btn);
+    }
+  }
+
+  displayReviews(currentPage);
+  setupPagination();
+</script>
+
+<a href="#contact" style="position: fixed; bottom: 20px; right: 20px; background-color: #ff8da0; color: white; padding: 12px 20px; border-radius: 30px; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000; text-decoration: none;">
+  💖 예약하기
+</a>
+
+</body>
+</html>

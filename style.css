@@ -1,0 +1,111 @@
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef9f5;
+  color: #333;
+  line-height: 1.8;
+  font-size: 19px;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+section {
+  max-width: 1300px;
+  margin: 4em auto;
+  padding: 1.5em 2em;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.service-box, .info-box {
+  background-color: #fffaf4;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+}
+
+.service-item {
+  margin: 1em 0;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.contact-box {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 2;
+}
+
+.review-summary {
+  cursor: pointer;
+  margin: 0.5em 0;
+  padding: 1em 1.2em;
+  background-color: #fff0f0;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-size: 1.05em;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.review-summary:hover {
+  background-color: #ffeaea;
+}
+
+.review-detail {
+  display: none;
+  padding: 0.5em 1em;
+  font-size: 0.95em;
+  color: #555;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.pagination button {
+  background-color: #ffd9d9;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0 0.3em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ffbcbc;
+  font-weight: bold;
+}
